@@ -58,6 +58,45 @@
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)coder
+{
+  self = [super initWithCoder:coder];
+  if (self) {
+    self.backgroundColor = [UIColor clearColor];
+    _tintColor = [UIColor ios7Blue];
+
+    self.progressBackgroundLayer = [CAShapeLayer layer];
+    _progressBackgroundLayer.strokeColor = _tintColor.CGColor;
+    _progressBackgroundLayer.fillColor = self.backgroundColor.CGColor;
+    _progressBackgroundLayer.lineCap = kCALineCapRound;
+    [self.layer addSublayer:_progressBackgroundLayer];
+
+    self.progressLayer = [CAShapeLayer layer];
+    _progressLayer.strokeColor = _tintColor.CGColor;
+    _progressLayer.fillColor = nil;
+    _progressLayer.lineCap = kCALineCapSquare;
+    [self.layer addSublayer:_progressLayer];
+
+    self.iconLayer = [CAShapeLayer layer];
+    _iconLayer.strokeColor = _tintColor.CGColor;
+    _iconLayer.fillColor = nil;
+    _iconLayer.lineCap = kCALineCapButt;
+    _iconLayer.fillRule = kCAFillRuleNonZero;
+    [self.layer addSublayer:_iconLayer];
+
+  }
+  return self;
+}
+
+- (void)layoutSubviews
+{
+  [super layoutSubviews];
+  _lineWidth = fmaxf(self.frame.size.width * 0.025, 1.f);
+  _progressBackgroundLayer.lineWidth = _lineWidth;
+  _progressLayer.lineWidth = _lineWidth * 2.0;
+  _iconLayer.lineWidth = _lineWidth;
+}
+
 - (void)setTintColor:(UIColor *)tintColor
 {
     _tintColor = tintColor;

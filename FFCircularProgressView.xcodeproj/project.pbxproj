@@ -24,6 +24,7 @@
 		2BD8AD14179535F80032D47A /* FFCircularProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8AD13179535F80032D47A /* FFCircularProgressViewTests.m */; };
 		2BD8AD1F1795362C0032D47A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8AD1E1795362C0032D47A /* ViewController.m */; };
 		2BE6133A1795B29800DE2FA0 /* FFCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE613391795B29800DE2FA0 /* FFCircularProgressView.m */; };
+		E27DE5C51803260300B38E40 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27DE5C41803260300B38E40 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		2BD8AD1E1795362C0032D47A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2BE613381795B29800DE2FA0 /* FFCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCircularProgressView.h; sourceTree = "<group>"; };
 		2BE613391795B29800DE2FA0 /* FFCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCircularProgressView.m; sourceTree = "<group>"; };
+		E27DE5C41803260300B38E40 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				2BD8ACFD179535F80032D47A /* AppDelegate.h */,
 				2BD8ACFE179535F80032D47A /* AppDelegate.m */,
 				2BD8AD1D1795362C0032D47A /* ViewController.h */,
+				E27DE5C41803260300B38E40 /* Storyboard.storyboard */,
 				2BD8AD1E1795362C0032D47A /* ViewController.m */,
 				2BD8AD00179535F80032D47A /* Images.xcassets */,
 				2BD8ACF5179535F80032D47A /* Supporting Files */,
@@ -252,6 +255,7 @@
 			files = (
 				2BD8ACF9179535F80032D47A /* InfoPlist.strings in Resources */,
 				2BD8AD01179535F80032D47A /* Images.xcassets in Resources */,
+				E27DE5C51803260300B38E40 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FFCircularProgressView/FFCircularProgressView-Prefix.pch";
 				INFOPLIST_FILE = "FFCircularProgressView/FFCircularProgressView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = FFCircularProgressView;
 				WRAPPER_EXTENSION = app;
 			};
@@ -414,7 +418,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FFCircularProgressView/FFCircularProgressView-Prefix.pch";
 				INFOPLIST_FILE = "FFCircularProgressView/FFCircularProgressView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = FFCircularProgressView;
 				WRAPPER_EXTENSION = app;
 			};

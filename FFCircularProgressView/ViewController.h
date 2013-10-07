@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class FFCircularProgressView;
+
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet FFCircularProgressView *circularPV;
 
 @end

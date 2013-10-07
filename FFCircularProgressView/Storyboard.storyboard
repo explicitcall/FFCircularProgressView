@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A584" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Eon-ap-WGl">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GNG-1l-585">
+            <objects>
+                <viewController id="Eon-ap-WGl" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PNE-UK-VDg"/>
+                        <viewControllerLayoutGuide type="bottom" id="v1e-Hz-OIe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bal-1Q-ADM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qhP-oI-Y6z" customClass="FFCircularProgressView">
+                                <rect key="frame" x="45" y="170" width="224" height="248"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="EBv-5f-Pu1"/>
+                                    <constraint firstAttribute="height" constant="224" id="raT-tR-xCD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v1e-Hz-OIe" firstAttribute="top" secondItem="qhP-oI-Y6z" secondAttribute="bottom" constant="150" id="gUp-Em-Adx"/>
+                            <constraint firstItem="qhP-oI-Y6z" firstAttribute="leading" secondItem="Bal-1Q-ADM" secondAttribute="leading" constant="45" id="l94-nq-tEQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circularPV" destination="qhP-oI-Y6z" id="Csz-BJ-zil"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbZ-Ga-IDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250" y="93"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
